@@ -5,13 +5,13 @@ This code example demonstrates the use of the Class-B Safety Test Library to tes
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-ce239833-safety-i2c-test)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzk4MzMiLCJTcGVjIE51bWJlciI6IjAwMi0zOTgzMyIsIkRvYyBUaXRsZSI6IkNsYXNzLUIgU2FmZXR5IFRlc3QgTGlicmFyeTogSTJDIiwicmlkIjoic3VidWRoaSIsIkRvYyB2ZXJzaW9uIjoiMS4wLjAiLCJEb2MgTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiRG9jIERpdmlzaW9uIjoiTUNEIiwiRG9jIEJVIjoiSUNXIiwiRG9jIEZhbWlseSI6IlBTT0MifQ==)
+[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzk4MzMiLCJTcGVjIE51bWJlciI6IjAwMi0zOTgzMyIsIkRvYyBUaXRsZSI6IkNsYXNzLUIgU2FmZXR5IFRlc3QgTGlicmFyeTogSTJDIiwicmlkIjoic3VidWRoaSIsIkRvYyB2ZXJzaW9uIjoiMS4xLjAiLCJEb2MgTGFuZ3VhZ2UiOiJFbmdsaXNoIiwiRG9jIERpdmlzaW9uIjoiTUNEIiwiRG9jIEJVIjoiSUNXIiwiRG9jIEZhbWlseSI6IlBTT0MifQ==)
 
 
 
 ## Requirements
 
-- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.2 or later (tested with v3.2)
+- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.3 or later (tested with v3.3)
 - Board support package (BSP) minimum required version: v4.2.0
 - Programming language: C
 - Associated parts: All [PSoC&trade; 6 MCU](https://www.infineon.com/cms/en/product/microcontroller/32-bit-psoc-arm-cortex-microcontroller/psoc-6-32-bit-arm-cortex-m4-mcu) and [XMC7000 MCU](https://www.infineon.com/cms/en/product/microcontroller/32-bit-industrial-microcontroller-based-on-arm-cortex-m/) parts
@@ -20,6 +20,8 @@ This code example demonstrates the use of the Class-B Safety Test Library to tes
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
 - GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) – Default value of `TOOLCHAIN`
+- Arm® Compiler v6.22 (`ARM`)
+- IAR C/C++ Compiler v9.50.2 (`IAR`)
 
 ## Supported kits (make variable 'TARGET')
 
@@ -216,6 +218,9 @@ For more details, see the [ModusToolbox&trade; tools package user guide](https:/
 
 5. After programming, the application starts automatically. Confirm that **Class-B Safety Test: I2C** is displayed on the UART terminal.
 
+   **Figure 1. Terminal output on program startup**
+
+   ![](images/image.png)
 6. The serial terminal should display the result of the I2C Loopback test.
 
 
@@ -291,6 +296,7 @@ Document title: *CE239833* - *Class-B Safety Test Library: I2C*
  Version | Description of change
  ------- | ---------------------
  1.0.0   | New code example
+ 1.1.0   | Added support for IAR and ARM compiler
 
 <br>
 
